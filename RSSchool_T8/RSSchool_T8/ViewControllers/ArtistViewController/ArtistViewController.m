@@ -147,12 +147,12 @@
 }
 
 - (void)resetButtonTapped:(RSButton *)sender {
-    self.eraseTimerInterval = 0.2;
+    self.eraseTimerInterval = 0.1;
     [self setStateForArtistViewController:stateArtistDraw];
     [self eraseShape:self.canvasView.layer.sublayers.firstObject];
-    [NSTimer scheduledTimerWithTimeInterval:self.eraseTimerInterval repeats:NO block:^(NSTimer * _Nonnull timer) {
+//    [NSTimer scheduledTimerWithTimeInterval:self.eraseTimerInterval repeats:NO block:^(NSTimer * _Nonnull timer) {
     [self setStateForArtistViewController:stateArtistIdle];
-    }];
+//    }];
 }
 
 -(void)shareButtonTapped:(RSButton *)sender {
