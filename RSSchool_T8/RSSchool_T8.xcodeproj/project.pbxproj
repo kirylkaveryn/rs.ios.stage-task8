@@ -16,8 +16,6 @@
 		ED3D8E2026A0BC7A00DBB4FE /* RSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E1E26A0BC7A00DBB4FE /* RSColor.m */; };
 		ED3D8E2526A0CAAC00DBB4FE /* RSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E2426A0CAAC00DBB4FE /* RSButton.m */; };
 		ED3D8E2D26A0DA6300DBB4FE /* RSCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E2C26A0DA6300DBB4FE /* RSCanvasView.m */; };
-		ED3D8E4926A1CA6600DBB4FE /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8E4826A1CA6600DBB4FE /* Montserrat-Medium.ttf */; };
-		ED3D8E4C26A1CB0100DBB4FE /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8E4B26A1CB0100DBB4FE /* Montserrat-Regular.ttf */; };
 		ED3D8E5926A2095E00DBB4FE /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E5726A2095E00DBB4FE /* ColorViewController.m */; };
 		ED3D8E5A26A2095E00DBB4FE /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8E5826A2095E00DBB4FE /* ColorViewController.xib */; };
 		ED3D8E6126A20B1F00DBB4FE /* RSColorPickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E6026A20B1F00DBB4FE /* RSColorPickButton.m */; };
@@ -25,6 +23,8 @@
 		EDAAB81D26A31056009943C1 /* DrawingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAB81C26A31056009943C1 /* DrawingsVC.swift */; };
 		EDAAB83026A4A4F7009943C1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAB82E26A4A4F7009943C1 /* TimerViewController.swift */; };
 		EDAAB83126A4A4F7009943C1 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAAB82F26A4A4F7009943C1 /* TimerViewController.xib */; };
+		EDE3820F26A5E6CE005DBA59 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDE3820D26A5E6CE005DBA59 /* Montserrat-Medium.ttf */; };
+		EDE3821026A5E6CE005DBA59 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDE3820E26A5E6CE005DBA59 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,6 @@
 		ED3D8E2426A0CAAC00DBB4FE /* RSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSButton.m; sourceTree = "<group>"; };
 		ED3D8E2B26A0DA6300DBB4FE /* RSCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCanvasView.h; sourceTree = "<group>"; };
 		ED3D8E2C26A0DA6300DBB4FE /* RSCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCanvasView.m; sourceTree = "<group>"; };
-		ED3D8E4826A1CA6600DBB4FE /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		ED3D8E4B26A1CB0100DBB4FE /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		ED3D8E5626A2095E00DBB4FE /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
 		ED3D8E5726A2095E00DBB4FE /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		ED3D8E5826A2095E00DBB4FE /* ColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		EDAAB82626A310C6009943C1 /* RSSchool_T8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T8-Bridging-Header.h"; sourceTree = "<group>"; };
 		EDAAB82E26A4A4F7009943C1 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		EDAAB82F26A4A4F7009943C1 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		EDE3820D26A5E6CE005DBA59 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		EDE3820E26A5E6CE005DBA59 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +151,8 @@
 		ED3D8E4126A1C86E00DBB4FE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				ED3D8E4826A1CA6600DBB4FE /* Montserrat-Medium.ttf */,
-				ED3D8E4B26A1CB0100DBB4FE /* Montserrat-Regular.ttf */,
+				EDE3820D26A5E6CE005DBA59 /* Montserrat-Medium.ttf */,
+				EDE3820E26A5E6CE005DBA59 /* Montserrat-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -264,11 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE3821026A5E6CE005DBA59 /* Montserrat-Regular.ttf in Resources */,
 				EDAAB83126A4A4F7009943C1 /* TimerViewController.xib in Resources */,
-				ED3D8E4C26A1CB0100DBB4FE /* Montserrat-Regular.ttf in Resources */,
 				ED3D8DFE26A0B36700DBB4FE /* LaunchScreen.storyboard in Resources */,
-				ED3D8E4926A1CA6600DBB4FE /* Montserrat-Medium.ttf in Resources */,
 				ED3D8E5A26A2095E00DBB4FE /* ColorViewController.xib in Resources */,
+				EDE3820F26A5E6CE005DBA59 /* Montserrat-Medium.ttf in Resources */,
 				ED3D8DFB26A0B36700DBB4FE /* Assets.xcassets in Resources */,
 				ED3D8E1926A0B82400DBB4FE /* ArtistViewController.xib in Resources */,
 				EDAAB81126A30CF5009943C1 /* DrawingsVC.xib in Resources */,
