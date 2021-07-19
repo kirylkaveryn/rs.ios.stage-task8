@@ -20,9 +20,7 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var timeControlSlider: UISlider!
     @IBOutlet weak var saveButton: RSButton!
     
-//    let formattedSpeed = String(format: "%.2f", self.timeControlSlider.value)
     @IBAction func timerSaveButtonTapped(_ sender: Any) {
-        self.saveButton.addTarget(self.parent, action:#selector(timerSaveButtonTapped), for: .touchUpInside)
         self.view.removeFromSuperview()
     }
     
@@ -34,7 +32,8 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
-
+        
+        self.saveButton.addTarget(self.parent, action:#selector(timerSaveButtonTapped), for: .touchUpInside)
     }
     
     func configureView() {
