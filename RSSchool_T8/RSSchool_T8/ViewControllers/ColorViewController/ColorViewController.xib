@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSColorViewController">
+            <connections>
+                <outlet property="colorPickButton1" destination="bE8-GX-KbL" id="qua-S1-oJ0"/>
+                <outlet property="colorPickButton10" destination="zmz-bf-UlR" id="hmo-Pe-RPz"/>
+                <outlet property="colorPickButton11" destination="KMd-fI-QNL" id="WJu-CL-hvw"/>
+                <outlet property="colorPickButton12" destination="ovX-8n-EyC" id="O3F-I8-M8T"/>
+                <outlet property="colorPickButton2" destination="hDB-A8-Nnj" id="VzT-g4-wW4"/>
+                <outlet property="colorPickButton3" destination="cuY-BJ-jYV" id="GsJ-Vt-69v"/>
+                <outlet property="colorPickButton4" destination="eyP-Ly-oJf" id="8dS-pc-qJd"/>
+                <outlet property="colorPickButton5" destination="evI-jJ-hGt" id="Ia5-HU-dXa"/>
+                <outlet property="colorPickButton6" destination="kBW-K8-xra" id="Zrv-Jz-jcy"/>
+                <outlet property="colorPickButton7" destination="x4C-7j-EG1" id="S2c-oc-65p"/>
+                <outlet property="colorPickButton8" destination="Dzx-v8-Lfu" id="Glf-4j-5oq"/>
+                <outlet property="colorPickButton9" destination="G9p-0d-uz5" id="UMB-Rn-Uoi"/>
+                <outlet property="paletteSaveButton" destination="ddF-ze-D8C" id="7gn-Tj-CX9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-3T-65U">
+                    <rect key="frame" x="17" y="92" width="340" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZlH-OC-lQe">
+                            <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE8-GX-KbL" userLabel="Button1" customClass="RSColorPickButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Kq8-Hr-Wf1"/>
+                                        <constraint firstAttribute="width" constant="40" id="KxM-h3-pob"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-A8-Nnj" userLabel="Button2" customClass="RSColorPickButton">
+                                    <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="3OM-yQ-dba"/>
+                                        <constraint firstAttribute="height" constant="40" id="p9Z-rn-7UK"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuY-BJ-jYV" userLabel="Button3" customClass="RSColorPickButton">
+                                    <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Mhp-xz-7ya"/>
+                                        <constraint firstAttribute="width" constant="40" id="rVJ-Br-gb4"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyP-Ly-oJf" userLabel="Button4" customClass="RSColorPickButton">
+                                    <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Onv-xj-RW1"/>
+                                        <constraint firstAttribute="width" constant="40" id="oJf-AO-6K6"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-jJ-hGt" userLabel="Button5" customClass="RSColorPickButton">
+                                    <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="gmb-PT-AWK"/>
+                                        <constraint firstAttribute="height" constant="40" id="zYz-ky-9bb"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBW-K8-xra" userLabel="Button6" customClass="RSColorPickButton">
+                                    <rect key="frame" x="300" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="ewQ-S9-JBu"/>
+                                        <constraint firstAttribute="width" constant="40" id="xGx-yc-eye"/>
+                                    </constraints>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="340" id="2DH-LH-VNP"/>
+                                <constraint firstAttribute="height" constant="40" id="EWB-k2-mst"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VGZ-Gl-Jjy">
+                            <rect key="frame" x="0.0" y="60" width="340" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4C-7j-EG1" userLabel="Button7" customClass="RSColorPickButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="9xJ-fx-Cmb"/>
+                                        <constraint firstAttribute="width" constant="40" id="lSi-8g-zlH"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzx-v8-Lfu" userLabel="Button8" customClass="RSColorPickButton">
+                                    <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="O04-7p-HTh"/>
+                                        <constraint firstAttribute="width" constant="40" id="Q7V-OI-PVh"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9p-0d-uz5" userLabel="Button9" customClass="RSColorPickButton">
+                                    <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Kb7-eY-26u"/>
+                                        <constraint firstAttribute="width" constant="40" id="zKC-4F-8VE"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmz-bf-UlR" userLabel="Button10" customClass="RSColorPickButton">
+                                    <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="kmT-7K-ble"/>
+                                        <constraint firstAttribute="width" constant="40" id="uoK-vJ-mNt"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-fI-QNL" userLabel="Button11" customClass="RSColorPickButton">
+                                    <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="S1A-tZ-Aqx"/>
+                                        <constraint firstAttribute="height" constant="40" id="szM-Je-eIk"/>
+                                    </constraints>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovX-8n-EyC" userLabel="Button12" customClass="RSColorPickButton">
+                                    <rect key="frame" x="300" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Jli-TY-ZLH"/>
+                                        <constraint firstAttribute="width" constant="40" id="Sba-Gb-8nq"/>
+                                    </constraints>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="340" id="2jE-M2-PMI"/>
+                                <constraint firstAttribute="height" constant="40" id="lZJ-R0-oni"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="hfx-bf-7mD"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddF-ze-D8C" customClass="RSButton">
+                    <rect key="frame" x="250" y="20" width="85" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="FU3-iC-Tw9"/>
+                        <constraint firstAttribute="width" constant="85" id="cRp-yK-aiV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" name="RSColorLightGreenSea"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" name="RSColorWhite"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="H4i-3T-65U" secondAttribute="trailing" constant="18" id="278-hX-c7p"/>
+                <constraint firstItem="H4i-3T-65U" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="92" id="EOk-fB-fZy"/>
+                <constraint firstItem="ddF-ze-D8C" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="Mw7-mW-Etp"/>
+                <constraint firstItem="H4i-3T-65U" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="17" id="lfi-IU-zT8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ddF-ze-D8C" secondAttribute="trailing" constant="40" id="s8p-kr-Dz9"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="84.107946026986511"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="RSColorLightGreenSea">
+            <color red="0.1289999932050705" green="0.68999999761581421" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RSColorWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawingsVC" customModule="RSSchool_T8" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonHead" destination="IaD-pN-EbP" id="3LC-CH-U2S"/>
+                <outlet property="buttonLandscape" destination="Rta-ex-MrU" id="Nzg-9h-iKN"/>
+                <outlet property="buttonPlanet" destination="oSr-YR-SyV" id="M1C-Gh-g2R"/>
+                <outlet property="buttonTree" destination="DmS-8l-8wH" id="qxM-Ve-kfA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-8l-8wH" customClass="RSButton">
+                    <rect key="frame" x="87.5" y="222" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="C6e-FF-A4D"/>
+                        <constraint firstAttribute="height" constant="40" id="gbT-jG-0Lf"/>
+                    </constraints>
+                    <state key="normal" title="Tree"/>
+                    <connections>
+                        <action selector="buttonTreeAction:" destination="-1" eventType="touchUpInside" id="Rzd-lC-vyb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaD-pN-EbP" customClass="RSButton">
+                    <rect key="frame" x="87.5" y="167" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="8Vt-DM-AQf"/>
+                        <constraint firstAttribute="height" constant="40" id="sIs-k8-HKl"/>
+                    </constraints>
+                    <state key="normal" title="Head"/>
+                    <connections>
+                        <action selector="buttonHeadAction:" destination="-1" eventType="touchUpInside" id="uyK-gi-Ybd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rta-ex-MrU" customClass="RSButton">
+                    <rect key="frame" x="87.5" y="277" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="ETm-Vc-ORY"/>
+                        <constraint firstAttribute="height" constant="40" id="ydN-2Z-bTD"/>
+                    </constraints>
+                    <state key="normal" title="Landscape"/>
+                    <connections>
+                        <action selector="buttonLandscapeAction:" destination="-1" eventType="touchUpInside" id="l7J-Fq-lkq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSr-YR-SyV" customClass="RSButton">
+                    <rect key="frame" x="87.5" y="112" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="m2a-S9-INU"/>
+                        <constraint firstAttribute="width" constant="200" id="yf5-MJ-RU7"/>
+                    </constraints>
+                    <state key="normal" title="Planet"/>
+                    <connections>
+                        <action selector="buttonPlanetAction:" destination="-1" eventType="touchUpInside" id="z86-3A-tUq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IaD-pN-EbP" firstAttribute="centerX" secondItem="oSr-YR-SyV" secondAttribute="centerX" id="9bz-Wq-4kt"/>
+                <constraint firstItem="DmS-8l-8wH" firstAttribute="top" secondItem="IaD-pN-EbP" secondAttribute="bottom" constant="15" id="FOg-yo-gqP"/>
+                <constraint firstItem="oSr-YR-SyV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="112" id="I4Q-HM-Qml"/>
+                <constraint firstItem="DmS-8l-8wH" firstAttribute="centerX" secondItem="IaD-pN-EbP" secondAttribute="centerX" id="PdJ-oq-f3B"/>
+                <constraint firstItem="Rta-ex-MrU" firstAttribute="centerX" secondItem="DmS-8l-8wH" secondAttribute="centerX" id="PpB-JQ-QsD"/>
+                <constraint firstItem="Rta-ex-MrU" firstAttribute="top" secondItem="DmS-8l-8wH" secondAttribute="bottom" constant="15" id="YB5-QR-yE3"/>
+                <constraint firstItem="oSr-YR-SyV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dhX-vD-wVg"/>
+                <constraint firstItem="IaD-pN-EbP" firstAttribute="top" secondItem="oSr-YR-SyV" secondAttribute="bottom" constant="15" id="xHo-4z-QyN"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="85"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistViewController">
+            <connections>
+                <outlet property="canvasView" destination="ulz-lg-iNJ" id="J7F-z1-tJg"/>
+                <outlet property="drawButton" destination="Rwf-7t-pBO" id="ZGf-jr-zb0"/>
+                <outlet property="openPaletteButton" destination="OqH-he-1pW" id="kzD-Vq-tOf"/>
+                <outlet property="openTimerButton" destination="DN2-Hf-EGE" id="4W8-6G-FBO"/>
+                <outlet property="resetButton" destination="U1p-vL-0CA" id="EGz-rw-mSP"/>
+                <outlet property="shareButton" destination="RVf-Mv-8FB" id="aVj-Cy-FU3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-lg-iNJ" userLabel="RSCanvasView" customClass="RSCanvasView">
+                    <rect key="frame" x="38" y="102" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="DDo-ng-Yvg"/>
+                        <constraint firstAttribute="width" constant="300" id="Mwt-Yw-of5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqH-he-1pW" customClass="RSButton">
+                    <rect key="frame" x="20" y="452" width="163" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="AOX-cu-aUu"/>
+                        <constraint firstAttribute="width" constant="163" id="gvF-uw-wIt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Open Palette">
+                        <color key="titleColor" name="RSColorLightGreenSea"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN2-Hf-EGE" customClass="RSButton">
+                    <rect key="frame" x="20" y="504" width="151" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="151" id="OhO-0e-lxT"/>
+                        <constraint firstAttribute="height" constant="32" id="QAK-0A-IyJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Open Timer">
+                        <color key="titleColor" name="RSColorLightGreenSea"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwf-7t-pBO" customClass="RSButton">
+                    <rect key="frame" x="243" y="452" width="91" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="ibr-Pr-pJV"/>
+                        <constraint firstAttribute="width" constant="91" id="snm-bZ-QYm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Draw">
+                        <color key="titleColor" name="RSColorLightGreenSea"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVf-Mv-8FB" customClass="RSButton">
+                    <rect key="frame" x="239" y="504" width="95" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Fec-MO-cCi"/>
+                        <constraint firstAttribute="width" constant="95" id="tg1-mx-mkr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Share">
+                        <color key="titleColor" name="RSColorLightGreenSea"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1p-vL-0CA" customClass="RSButton">
+                    <rect key="frame" x="243" y="452" width="91" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="bMt-AN-jIp"/>
+                        <constraint firstAttribute="height" constant="32" id="xfb-Lw-EoU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Reset">
+                        <color key="titleColor" name="RSColorLightGreenSea"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OqH-he-1pW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="2WV-GP-1BU"/>
+                <constraint firstItem="RVf-Mv-8FB" firstAttribute="top" secondItem="Rwf-7t-pBO" secondAttribute="bottom" constant="20" id="5E7-6M-z3r"/>
+                <constraint firstItem="RVf-Mv-8FB" firstAttribute="trailing" secondItem="Rwf-7t-pBO" secondAttribute="trailing" id="8GI-EN-VWn"/>
+                <constraint firstItem="OqH-he-1pW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="452" id="GRw-Da-XyW"/>
+                <constraint firstItem="DN2-Hf-EGE" firstAttribute="top" secondItem="OqH-he-1pW" secondAttribute="bottom" constant="20" id="KOT-Wk-lwb"/>
+                <constraint firstItem="DN2-Hf-EGE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Lwd-HJ-78d"/>
+                <constraint firstItem="ulz-lg-iNJ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="38" id="Ns3-1i-o3c"/>
+                <constraint firstItem="U1p-vL-0CA" firstAttribute="centerX" secondItem="ulz-lg-iNJ" secondAttribute="centerX" constant="100.5" id="QK2-c1-bGk"/>
+                <constraint firstItem="U1p-vL-0CA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="134.5" id="ak6-VD-HWm"/>
+                <constraint firstItem="Rwf-7t-pBO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="452" id="bQp-Uc-50D"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Rwf-7t-pBO" secondAttribute="trailing" constant="41" id="cWq-XV-rg0"/>
+                <constraint firstItem="ulz-lg-iNJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="102" id="hve-8A-GII"/>
+            </constraints>
+            <point key="canvasLocation" x="-186" y="85"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="RSColorLightGreenSea">
+            <color red="0.1289999932050705" green="0.68999999761581421" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

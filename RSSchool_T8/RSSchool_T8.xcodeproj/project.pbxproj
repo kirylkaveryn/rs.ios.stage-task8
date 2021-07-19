@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED3D8DF026A0B35D00DBB4FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8DEF26A0B35D00DBB4FE /* AppDelegate.m */; };
+		ED3D8DFB26A0B36700DBB4FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8DFA26A0B36700DBB4FE /* Assets.xcassets */; };
+		ED3D8DFE26A0B36700DBB4FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8DFC26A0B36700DBB4FE /* LaunchScreen.storyboard */; };
+		ED3D8E0126A0B36700DBB4FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E0026A0B36700DBB4FE /* main.m */; };
+		ED3D8E1826A0B82400DBB4FE /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E1626A0B82400DBB4FE /* ArtistViewController.m */; };
+		ED3D8E1926A0B82400DBB4FE /* ArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8E1726A0B82400DBB4FE /* ArtistViewController.xib */; };
+		ED3D8E2026A0BC7A00DBB4FE /* RSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E1E26A0BC7A00DBB4FE /* RSColor.m */; };
+		ED3D8E2526A0CAAC00DBB4FE /* RSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E2426A0CAAC00DBB4FE /* RSButton.m */; };
+		ED3D8E2D26A0DA6300DBB4FE /* RSCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E2C26A0DA6300DBB4FE /* RSCanvasView.m */; };
+		ED3D8E4926A1CA6600DBB4FE /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8E4826A1CA6600DBB4FE /* Montserrat-Medium.ttf */; };
+		ED3D8E4C26A1CB0100DBB4FE /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8E4B26A1CB0100DBB4FE /* Montserrat-Regular.ttf */; };
+		ED3D8E5926A2095E00DBB4FE /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E5726A2095E00DBB4FE /* ColorViewController.m */; };
+		ED3D8E5A26A2095E00DBB4FE /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3D8E5826A2095E00DBB4FE /* ColorViewController.xib */; };
+		ED3D8E6126A20B1F00DBB4FE /* RSColorPickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D8E6026A20B1F00DBB4FE /* RSColorPickButton.m */; };
+		EDAAB81126A30CF5009943C1 /* DrawingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAAB80F26A30CF5009943C1 /* DrawingsVC.xib */; };
+		EDAAB81D26A31056009943C1 /* DrawingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAB81C26A31056009943C1 /* DrawingsVC.swift */; };
+		EDAAB83026A4A4F7009943C1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAB82E26A4A4F7009943C1 /* TimerViewController.swift */; };
+		EDAAB83126A4A4F7009943C1 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAAB82F26A4A4F7009943C1 /* TimerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED3D8DEB26A0B35D00DBB4FE /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3D8DEE26A0B35D00DBB4FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED3D8DEF26A0B35D00DBB4FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED3D8DFA26A0B36700DBB4FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED3D8DFD26A0B36700DBB4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED3D8DFF26A0B36700DBB4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3D8E0026A0B36700DBB4FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED3D8E1526A0B82400DBB4FE /* ArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistViewController.h; sourceTree = "<group>"; };
+		ED3D8E1626A0B82400DBB4FE /* ArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistViewController.m; sourceTree = "<group>"; };
+		ED3D8E1726A0B82400DBB4FE /* ArtistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistViewController.xib; sourceTree = "<group>"; };
+		ED3D8E1E26A0BC7A00DBB4FE /* RSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSColor.m; sourceTree = "<group>"; };
+		ED3D8E1F26A0BC7A00DBB4FE /* RSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSColor.h; sourceTree = "<group>"; };
+		ED3D8E2326A0CAAC00DBB4FE /* RSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSButton.h; sourceTree = "<group>"; };
+		ED3D8E2426A0CAAC00DBB4FE /* RSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSButton.m; sourceTree = "<group>"; };
+		ED3D8E2B26A0DA6300DBB4FE /* RSCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCanvasView.h; sourceTree = "<group>"; };
+		ED3D8E2C26A0DA6300DBB4FE /* RSCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCanvasView.m; sourceTree = "<group>"; };
+		ED3D8E4826A1CA6600DBB4FE /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		ED3D8E4B26A1CB0100DBB4FE /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		ED3D8E5626A2095E00DBB4FE /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		ED3D8E5726A2095E00DBB4FE /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		ED3D8E5826A2095E00DBB4FE /* ColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
+		ED3D8E5F26A20B1F00DBB4FE /* RSColorPickButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSColorPickButton.h; sourceTree = "<group>"; };
+		ED3D8E6026A20B1F00DBB4FE /* RSColorPickButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSColorPickButton.m; sourceTree = "<group>"; };
+		EDAAB80F26A30CF5009943C1 /* DrawingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawingsVC.xib; sourceTree = "<group>"; };
+		EDAAB81C26A31056009943C1 /* DrawingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsVC.swift; sourceTree = "<group>"; };
+		EDAAB82626A310C6009943C1 /* RSSchool_T8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T8-Bridging-Header.h"; sourceTree = "<group>"; };
+		EDAAB82E26A4A4F7009943C1 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		EDAAB82F26A4A4F7009943C1 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED3D8DE826A0B35D00DBB4FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED3D8DE226A0B35D00DBB4FE = {
+			isa = PBXGroup;
+			children = (
+				ED3D8DED26A0B35D00DBB4FE /* RSSchool_T8 */,
+				ED3D8DEC26A0B35D00DBB4FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED3D8DEC26A0B35D00DBB4FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8DEB26A0B35D00DBB4FE /* RSSchool_T8.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED3D8DED26A0B35D00DBB4FE /* RSSchool_T8 */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAB82626A310C6009943C1 /* RSSchool_T8-Bridging-Header.h */,
+				ED3D8DEE26A0B35D00DBB4FE /* AppDelegate.h */,
+				ED3D8DEF26A0B35D00DBB4FE /* AppDelegate.m */,
+				ED4119C726A2609200405746 /* ViewControllers */,
+				ED4119C926A2616300405746 /* CustomViews */,
+				ED3D8DFA26A0B36700DBB4FE /* Assets.xcassets */,
+				ED3D8DFC26A0B36700DBB4FE /* LaunchScreen.storyboard */,
+				ED3D8DFF26A0B36700DBB4FE /* Info.plist */,
+				ED3D8E0026A0B36700DBB4FE /* main.m */,
+				ED3D8E4126A1C86E00DBB4FE /* Fonts */,
+			);
+			path = RSSchool_T8;
+			sourceTree = "<group>";
+		};
+		ED3D8E0E26A0B7C800DBB4FE /* ArtistViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E1526A0B82400DBB4FE /* ArtistViewController.h */,
+				ED3D8E1626A0B82400DBB4FE /* ArtistViewController.m */,
+				ED3D8E1726A0B82400DBB4FE /* ArtistViewController.xib */,
+			);
+			path = ArtistViewController;
+			sourceTree = "<group>";
+		};
+		ED3D8E1D26A0BC4F00DBB4FE /* RSColor */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E1F26A0BC7A00DBB4FE /* RSColor.h */,
+				ED3D8E1E26A0BC7A00DBB4FE /* RSColor.m */,
+			);
+			path = RSColor;
+			sourceTree = "<group>";
+		};
+		ED3D8E2226A0CA7500DBB4FE /* RSButton */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E2326A0CAAC00DBB4FE /* RSButton.h */,
+				ED3D8E2426A0CAAC00DBB4FE /* RSButton.m */,
+			);
+			path = RSButton;
+			sourceTree = "<group>";
+		};
+		ED3D8E2A26A0DA3D00DBB4FE /* RSCanvasView */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E2B26A0DA6300DBB4FE /* RSCanvasView.h */,
+				ED3D8E2C26A0DA6300DBB4FE /* RSCanvasView.m */,
+			);
+			path = RSCanvasView;
+			sourceTree = "<group>";
+		};
+		ED3D8E2F26A0DE8800DBB4FE /* DrawingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAB81C26A31056009943C1 /* DrawingsVC.swift */,
+				EDAAB80F26A30CF5009943C1 /* DrawingsVC.xib */,
+			);
+			path = DrawingsViewController;
+			sourceTree = "<group>";
+		};
+		ED3D8E4126A1C86E00DBB4FE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E4826A1CA6600DBB4FE /* Montserrat-Medium.ttf */,
+				ED3D8E4B26A1CB0100DBB4FE /* Montserrat-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		ED3D8E5C26A2096500DBB4FE /* ColorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E5626A2095E00DBB4FE /* ColorViewController.h */,
+				ED3D8E5726A2095E00DBB4FE /* ColorViewController.m */,
+				ED3D8E5826A2095E00DBB4FE /* ColorViewController.xib */,
+			);
+			path = ColorViewController;
+			sourceTree = "<group>";
+		};
+		ED3D8E5E26A20B0100DBB4FE /* RSColorPickButton */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E5F26A20B1F00DBB4FE /* RSColorPickButton.h */,
+				ED3D8E6026A20B1F00DBB4FE /* RSColorPickButton.m */,
+			);
+			path = RSColorPickButton;
+			sourceTree = "<group>";
+		};
+		ED4119C726A2609200405746 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAB82D26A4A4CA009943C1 /* TimerViewController */,
+				ED3D8E5C26A2096500DBB4FE /* ColorViewController */,
+				ED3D8E2F26A0DE8800DBB4FE /* DrawingsViewController */,
+				ED3D8E0E26A0B7C800DBB4FE /* ArtistViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED4119C926A2616300405746 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D8E5E26A20B0100DBB4FE /* RSColorPickButton */,
+				ED3D8E2A26A0DA3D00DBB4FE /* RSCanvasView */,
+				ED3D8E1D26A0BC4F00DBB4FE /* RSColor */,
+				ED3D8E2226A0CA7500DBB4FE /* RSButton */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		EDAAB82D26A4A4CA009943C1 /* TimerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAB82E26A4A4F7009943C1 /* TimerViewController.swift */,
+				EDAAB82F26A4A4F7009943C1 /* TimerViewController.xib */,
+			);
+			path = TimerViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED3D8DEA26A0B35D00DBB4FE /* RSSchool_T8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3D8E0426A0B36700DBB4FE /* Build configuration list for PBXNativeTarget "RSSchool_T8" */;
+			buildPhases = (
+				ED3D8DE726A0B35D00DBB4FE /* Sources */,
+				ED3D8DE826A0B35D00DBB4FE /* Frameworks */,
+				ED3D8DE926A0B35D00DBB4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSchool_T8;
+			productName = RSSchool_T8;
+			productReference = ED3D8DEB26A0B35D00DBB4FE /* RSSchool_T8.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED3D8DE326A0B35D00DBB4FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ED3D8DEA26A0B35D00DBB4FE = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = ED3D8DE626A0B35D00DBB4FE /* Build configuration list for PBXProject "RSSchool_T8" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED3D8DE226A0B35D00DBB4FE;
+			productRefGroup = ED3D8DEC26A0B35D00DBB4FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED3D8DEA26A0B35D00DBB4FE /* RSSchool_T8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED3D8DE926A0B35D00DBB4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAAB83126A4A4F7009943C1 /* TimerViewController.xib in Resources */,
+				ED3D8E4C26A1CB0100DBB4FE /* Montserrat-Regular.ttf in Resources */,
+				ED3D8DFE26A0B36700DBB4FE /* LaunchScreen.storyboard in Resources */,
+				ED3D8E4926A1CA6600DBB4FE /* Montserrat-Medium.ttf in Resources */,
+				ED3D8E5A26A2095E00DBB4FE /* ColorViewController.xib in Resources */,
+				ED3D8DFB26A0B36700DBB4FE /* Assets.xcassets in Resources */,
+				ED3D8E1926A0B82400DBB4FE /* ArtistViewController.xib in Resources */,
+				EDAAB81126A30CF5009943C1 /* DrawingsVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED3D8DE726A0B35D00DBB4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAAB83026A4A4F7009943C1 /* TimerViewController.swift in Sources */,
+				ED3D8E2526A0CAAC00DBB4FE /* RSButton.m in Sources */,
+				ED3D8E2026A0BC7A00DBB4FE /* RSColor.m in Sources */,
+				ED3D8DF026A0B35D00DBB4FE /* AppDelegate.m in Sources */,
+				ED3D8E6126A20B1F00DBB4FE /* RSColorPickButton.m in Sources */,
+				EDAAB81D26A31056009943C1 /* DrawingsVC.swift in Sources */,
+				ED3D8E2D26A0DA6300DBB4FE /* RSCanvasView.m in Sources */,
+				ED3D8E0126A0B36700DBB4FE /* main.m in Sources */,
+				ED3D8E1826A0B82400DBB4FE /* ArtistViewController.m in Sources */,
+				ED3D8E5926A2095E00DBB4FE /* ColorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED3D8DFC26A0B36700DBB4FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3D8DFD26A0B36700DBB4FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED3D8E0226A0B36700DBB4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED3D8E0326A0B36700DBB4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED3D8E0526A0B36700DBB4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "RSSchool_T8-Bridging-Header.h";
+				NEW_SETTING1 = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-T8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T8/RSSchool_T8-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ED3D8E0626A0B36700DBB4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69YJ6ZVKYK;
+				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "RSSchool_T8-Bridging-Header.h";
+				NEW_SETTING1 = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RSStudent.RSSchool-T8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T8/RSSchool_T8-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED3D8DE626A0B35D00DBB4FE /* Build configuration list for PBXProject "RSSchool_T8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3D8E0226A0B36700DBB4FE /* Debug */,
+				ED3D8E0326A0B36700DBB4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3D8E0426A0B36700DBB4FE /* Build configuration list for PBXNativeTarget "RSSchool_T8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3D8E0526A0B36700DBB4FE /* Debug */,
+				ED3D8E0626A0B36700DBB4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED3D8DE326A0B35D00DBB4FE /* Project object */;
+}
