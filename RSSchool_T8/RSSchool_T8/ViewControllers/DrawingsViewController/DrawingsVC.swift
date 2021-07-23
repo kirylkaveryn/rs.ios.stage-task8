@@ -18,41 +18,42 @@ class DrawingsVC: UIViewController {
     
     @IBAction func buttonTreeAction(_ sender: RSButton) {
         self.drawing = "Tree"
-        self.buttonTree.setSelected(true)
-        self.buttonHead.setSelected(false)
-        self.buttonLandscape.setSelected(false)
-        self.buttonPlanet.setSelected(false)
+        self.buttonTree.isSelected = true
+        self.buttonHead.isSelected = false
+        self.buttonLandscape.isSelected = false
+        self.buttonPlanet.isSelected = false
     }
     @IBAction func buttonHeadAction(_ sender: RSButton) {
         self.drawing = "Head"
-        self.buttonTree.setSelected(false)
-        self.buttonHead.setSelected(true) // default state
-        self.buttonLandscape.setSelected(false)
-        self.buttonPlanet.setSelected(false)
+        self.buttonTree.isSelected = false
+        self.buttonHead.isSelected = true // default state
+        self.buttonLandscape.isSelected = false
+        self.buttonPlanet.isSelected = false
     }
     @IBAction func buttonLandscapeAction(_ sender: RSButton) {
         self.drawing = "Landscape"
-        self.buttonTree.setSelected(false)
-        self.buttonHead.setSelected(false)
-        self.buttonLandscape.setSelected(true)
-        self.buttonPlanet.setSelected(false)
+        self.buttonTree.isSelected = false
+        self.buttonHead.isSelected = false
+        self.buttonLandscape.isSelected = true
+        self.buttonPlanet.isSelected = false
     }
     @IBAction func buttonPlanetAction(_ sender: RSButton) {
         self.drawing = "Planet"
-        self.buttonTree.setSelected(false)
-        self.buttonHead.setSelected(false)
-        self.buttonLandscape.setSelected(false)
-        self.buttonPlanet.setSelected(true)
+        self.buttonTree.isSelected = false
+        self.buttonHead.isSelected = false
+        self.buttonLandscape.isSelected = false
+        self.buttonPlanet.isSelected = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.buttonTree.selectedMode = true
-        self.buttonHead.selectedMode = true
-        self.buttonLandscape.selectedMode = true
-        self.buttonPlanet.selectedMode = true
+        // change buttons to "selectable"
+        self.buttonTree.selectableState = true
+        self.buttonHead.selectableState = true
+        self.buttonLandscape.selectableState = true
+        self.buttonPlanet.selectableState = true
         
-        self.buttonHead.setSelected(true)
+        self.buttonHead.isSelected = true
 
     }
     

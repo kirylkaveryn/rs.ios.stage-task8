@@ -30,7 +30,7 @@
     self.layer.shadowOffset = CGSizeMake(0.0, 0.0);
     self.layer.shadowOpacity = 0.25;
     [self clipsToBounds];
-    self.selectedMode = false;
+    self.selectableState = false;
     
     [self.titleLabel setFont: [UIFont fontWithName:@"Montserrat-Medium" size:18.0]];
     [self setTitleColor:[UIColor rsColorLightGreenSea] forState:UIControlStateNormal];
@@ -38,7 +38,7 @@
 }
 
 -(void)setHighlighted:(BOOL)highlighted {
-    if (self.selectedMode == false) {
+    if (self.selectableState == false) {
         if (highlighted) {
             self.layer.shadowColor = [UIColor rsColorLightGreenSea].CGColor;
             self.layer.shadowRadius = 2.0;
@@ -53,7 +53,7 @@
 }
 
 -(void)setSelected:(BOOL)selected {
-    if (self.selectedMode == true) {
+    if (self.selectableState == true) {
         if (selected) {
             self.layer.shadowColor = [UIColor rsColorLightGreenSea].CGColor;
             self.layer.shadowRadius = 2.0;

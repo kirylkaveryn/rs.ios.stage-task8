@@ -25,12 +25,12 @@
 @property (weak, nonatomic) IBOutlet RSButton *drawButton;
 @property (weak, nonatomic) IBOutlet RSButton *shareButton;
 @property (weak, nonatomic) IBOutlet RSButton *resetButton;
-@property (strong, nonnull) NSString *drawingPicture;
-@property (strong, nonatomic) CABasicAnimation *drawAnimation;
-@property (strong, nonatomic) CABasicAnimation *eraseAnimation;
+@property (strong, nonatomic) NSString *drawingPicture;
+//@property (strong, nonatomic) CABasicAnimation *drawAnimation;
+//@property (strong, nonatomic) CABasicAnimation *eraseAnimation;
 @property (strong, nonatomic) CAShapeLayer *shapeLayer;
 @property (strong, nonatomic) NSMutableArray <RSColorPickButton *> *colorSet;
-@property (assign, nonatomic) CFTimeInterval timerInterval;
+@property (assign, nonatomic) CFTimeInterval drawTimerInterval;
 @property (assign, nonatomic) CFTimeInterval eraseTimerInterval;
 @property (assign, nonatomic) NSTimer *timer;
 
@@ -46,12 +46,11 @@
     self.colorPickVC = [[ColorViewController alloc] initWithNibName:@"ColorViewController" bundle:nil];
     self.timerVC = [[TimerViewController alloc] initWithNibName:@"TimerViewController" bundle:nil];
     [self setDefaultColorSet];
-    self.timerInterval = 1.0;
+    self.drawTimerInterval = 1.0;
     
     [self.drawButton addTarget:self action:@selector(drawButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.openPaletteButton addTarget:self action:@selector(paletteButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.resetButton addTarget:self action:@selector(resetButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self.shareButton addTarget:self action:@selector(shareButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.shareButton addTarget:self action:@selector(shareButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.openTimerButton addTarget:self action:@selector(timerButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -141,7 +140,7 @@
     if ([self.drawingsVC.drawing isEqual: @"Landscape"]) {
         [self drawLandscape];
     }
-    [NSTimer scheduledTimerWithTimeInterval:self.timerInterval repeats:NO block:^(NSTimer * _Nonnull timer) {
+    [NSTimer scheduledTimerWithTimeInterval:self.drawTimerInterval repeats:NO block:^(NSTimer * _Nonnull timer) {
         [self setStateForArtistViewController:stateArtistDone];
     }];
 }
@@ -174,7 +173,7 @@
 }
 
 - (void)timerSaveButtonTapped:(RSButton *)sender {
-    self.timerInterval = [self.timerVC.currentTimerValue.text doubleValue];
+    self.drawTimerInterval = [self.timerVC.currentTimerValue.text doubleValue];
 }
 
 - (void)disableButton:(RSButton *) button {
@@ -219,7 +218,7 @@
     }
 }
 
-// метод устонавливает дефолтную цветовоую палитру (три черных цвета)
+// метод устанавливает дефолтную цветовоую палитру (три черных цвета)
 -(void)setDefaultColorSet {
     self.colorSet = [NSMutableArray new];
     RSColorPickButton *defaultButton = [RSColorPickButton new];
@@ -238,7 +237,7 @@
 //        draw.duration = 1.0;
 //    }
 //    else {
-//        draw.duration = self.timerInterval;
+//        draw.duration = self.drawTimerInterval;
 //    }
 //
 //    draw.fromValue = @(0.0);
@@ -254,7 +253,7 @@
 //}
 
 -(void)drawShape:(CAShapeLayer *)shapeLayer {
-    CGFloat delta = 1 / (self.timerInterval * 60);
+    CGFloat delta = 1 / (self.drawTimerInterval * 60);
     NSTimeInterval interval = 1 / 60.0;
     shapeLayer.strokeStart = 0.0;
     shapeLayer.strokeEnd = 0.0;
@@ -499,7 +498,7 @@
     
     NSArray<UIBezierPath*> *bezierPathArray = [[NSArray alloc] initWithObjects:bezierPath, bezier2Path, bezier3Path, nil];
     CAShapeLayer *masterLayer = [self createShapeLayerWithBezierPathArray:bezierPathArray];
-
+    
     [self.canvasView.layer addSublayer:masterLayer];
     [self drawShape:masterLayer];
 

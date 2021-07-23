@@ -87,7 +87,7 @@
     }
  
     self.colorPickButtonDefault = [RSColorPickButton new];
-    [self.colorPickButtonDefault configureButton];
+//    [self.colorPickButtonDefault configureButton];
     self.colorSet = [[NSMutableArray alloc] init];
     [self.colorSet addObject:self.colorPickButtonDefault];
     [self.colorSet addObject:self.colorPickButtonDefault];

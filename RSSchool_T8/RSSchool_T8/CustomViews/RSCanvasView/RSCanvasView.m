@@ -26,5 +26,4 @@
     self.layer.shadowOpacity = 0.25;
 }
 
-
 @end

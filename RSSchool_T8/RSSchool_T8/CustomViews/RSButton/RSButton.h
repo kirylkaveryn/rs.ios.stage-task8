@@ -11,10 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RSButton : UIButton
 
-@property (assign, nonatomic) BOOL selectedMode;
+@property (assign, nonatomic) BOOL selectableState;
 
--(void)setHighlighted:(BOOL)highlighted;
--(void)setSelected:(BOOL)selected;
+//-(void)setHighlighted:(BOOL)highlighted;
+//-(void)setSelected:(BOOL)selected;
 
 @end
 
